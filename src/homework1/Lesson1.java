@@ -1,3 +1,5 @@
+package homework1;
+
 public class Lesson1 {
     public static void main(String[] args) {
 
@@ -77,6 +79,5 @@ public class Lesson1 {
             System.out.println(year + " год не високосный");
         }
     }
-
 
 }
