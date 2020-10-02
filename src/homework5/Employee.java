@@ -6,9 +6,9 @@ public class Employee {
     private final String email;
     private final String phone;
     private final int salary;
-    private final int age;
+    final int age;
 
-    public Employee(String fio, String position, String email, String phone, int salary, int age){
+    public Employee(String fio, String position, String email, String phone, int salary, int age) {
         this.fio = fio;
         this.position = position;
         this.email = email;
@@ -17,22 +17,16 @@ public class Employee {
         this.age = age;
     }
 
-    public void info(){
-        System.out.println(this);
-    }
+    // public void info() {
+    //     System.out.println(this);
+    // }
 
     @Override
     public String toString() {
-        return "Emploeyee{" +
-                "fio:'" + fio + '\'' +
-                ", position:'" + position + '\'' +
-                ", email:'" + email + '\'' +
-                ", phone:" + phone +
-                ", salary:" + salary +
-                ", age:" + age +
-                '}';
+        if (this.age < 40) {
+            return "Emploeyee{" + "fio:'" + fio + '\'' + ", position:'" + position + '\'' + ", email:'" + email + '\'' +
+                    ", phone:" + phone + ", salary:" + salary + ", age:" + age + '}';
+        } else return "нет 40 лет";
     }
-
 }
-
 

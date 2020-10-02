@@ -13,7 +13,7 @@ public class Lesson2 {
         makeArrayByStep3(arrayForFill);
 
         System.out.println("\nзадание 3:");
-        int[] arrayForMultiplyByTwo = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};;
+        int[] arrayForMultiplyByTwo = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
         multiplyByTwo(arrayForMultiplyByTwo);
 
         System.out.println("\nзадание 4:");
