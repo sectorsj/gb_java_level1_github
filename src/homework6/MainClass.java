@@ -1,9 +1,5 @@
 package homework6;
 
-import draftNotebook.Animal;
-import draftNotebook.Cat;
-import draftNotebook.Dog;
-
 public class MainClass {
     public static void main(String[] args) {
         //Animal animal = new Animal("Alpha", 400, 10, 0.3);
@@ -19,10 +15,10 @@ public class MainClass {
         //        + animal.jump(2.2));
 
         Animal[] animals = {
-                new draftNotebook.Cat("Мурка", 200, 0, 2.1),
+                new Cat("Мурка", 200, 0, 2.1),
                 new Cat("Васька", 350, 11, 2.5),
-                new draftNotebook.Dog("Бобик", 200, 20, 0.2),
-                new draftNotebook.Dog("Шарик", 330, 10, 0.5),
+                new Dog("Бобик", 200, 20, 0.2),
+                new Dog("Шарик", 330, 10, 0.5),
                 new Dog("Тузик", 460, 17, 1.0),
         };
 

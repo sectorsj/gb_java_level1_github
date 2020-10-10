@@ -1,39 +1,36 @@
 package homework6;
 
-import draftNotebook.Animal;
 
 public class Cat extends Animal {
+    protected String name;
+    protected int runingLimit;
+    protected int swimingLimit;
+    protected double jumpingLimit;
 
-    public Cat(String name, int runingLimit, int swimingLimit, double jumpingLimit) {
-        super(name, runingLimit, swimingLimit, jumpingLimit);
+    protected Cat (String name, int runingLimit, int swimingLimit, double jumpingLimit) {
+        this.name = name;
+        this.runingLimit = runingLimit;
+        this.swimingLimit = swimingLimit;
+        this.jumpingLimit = jumpingLimit;
     }
 
     @Override
-    public void run(int runDistance) {
-        if (runDistance > runingLimit) {
-            System.out.println(false);
-        }else {
-            System.out.println(true);
-        }
+    protected void run(int runDistance) {
+        boolean isRun = runDistance <= runingLimit;
+            System.out.println("Run result: " + isRun);
     }
 
     //
     @Override
-    public void swim(int swimDistance) {
-        if (swimDistance > swimingLimit){
-            System.out.println(false);
-        }else {
-            System.out.println(true);
-        }
+    protected void swim(int swimDistance) {
+        boolean isSwim = swimDistance <= swimingLimit;
+            System.out.println("Swim result: " + isSwim);
     }
 
     @Override
-    public void jump(double jumpDistance) {
-        if (jumpDistance > jumpingLimit){
-            System.out.println(false);
-        }else {
-            System.out.println(true);
-        }
+    protected void jump(double jumpDistance) {
+        boolean isJump = jumpDistance <= jumpingLimit;
+            System.out.println("Jump result: " + isJump);
     }
 
     @Override

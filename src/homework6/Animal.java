@@ -1,41 +1,16 @@
 package homework6;
 
-public class Animal {
-    public String name;
-    public int runingLimit;
-    public int swimingLimit;
-    public double jumpingLimit;
+ public abstract class Animal {
+    protected String name;
+    protected int runingLimit;
+    protected int swimingLimit;
+    protected double jumpingLimit;
 
-    public Animal (String name, int runingLimit, int swimingLimit, double jumpingLimit) {
-        this.name = name;
-        this.runingLimit = runingLimit;
-        this.swimingLimit = swimingLimit;
-        this.jumpingLimit = jumpingLimit;
-    }
+    protected abstract void run(int runDistance);
 
-    public void run(int runDistance){
-        if (runDistance > runingLimit){
-            System.out.println(false);
-        } else {
-            System.out.println(true);
-        }
-    }
+    protected abstract void swim (int swimDistance);
 
-    public void swim (int swimDistance){
-        if(swimDistance > swimingLimit){
-            System.out.println(false);
-        } else {
-            System.out.println(true);
-        }
-    }
-
-    public void jump(double jumpDistance){
-        if(jumpDistance > jumpingLimit){
-            System.out.println(false);
-        } else {
-            System.out.println(true);
-        }
-    }
+    protected abstract void jump(double jumpDistance);
 
     @Override
     public String toString() {
