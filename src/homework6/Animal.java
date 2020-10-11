@@ -7,9 +7,7 @@ package homework6;
     protected double jumpingLimit;
 
     protected abstract void run(int runDistance);
-
     protected abstract void swim (int swimDistance);
-
     protected abstract void jump(double jumpDistance);
 
     @Override
