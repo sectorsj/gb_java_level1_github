@@ -4,28 +4,26 @@ import java.util.Scanner;
 
 public class Plate {
     private int food;
+    public static final Scanner scanner = new Scanner(System.in);
 
-    Scanner scanner = new Scanner(System.in);
-
-    public Plate(){
+    public void setFood() {
         this.food = food;
+        System.out.print("enter the amount of food: ");
+        if (food >= 0){
+            food = Plate.scanner.nextInt();
+        }
     }
+
     public int getFood() {
         return food;
     }
 
-    public void setFood() {
-        this.food = food;
-        System.out.println("Insert quantity of food: ");
-        int num = scanner.nextInt();
-    }
-
-    public void decreaseFood(int gram){
-        if(gram < food) {
+    public boolean decreaseFood(int gram){
+        if(gram <= food) {
             food -= gram;
             System.out.println("Hungry cat is eating from plate");
-        } else
-            System.out.println("Not enough food");
+        }
+        return false;
     }
 
     public void info() {

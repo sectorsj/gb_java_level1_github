@@ -1,8 +1,5 @@
 package homework7;
 
-
-import java.util.Scanner;
-
 public class MainClass {
     public static void main(String[] args) {
 
@@ -15,19 +12,14 @@ public class MainClass {
         };
 
         Plate plate = new Plate();
-
-        while (true){
-            plate.setFood();
-            for (int i = 0; i < cats.length; i++) {
-                System.out.println("" + cats[i]);
-                plate.info();
-                cats[i].eat(plate);
-                plate.info();
-                cats[i].encreaseSatiety();
-                System.out.println("" + cats[i]+ "\n");
-            }
+        plate.setFood();
+        for (int i = 0; i < cats.length; i++) {
+            System.out.println("" + cats[i]);
+            plate.info();
+            cats[i].eat(plate);
+            cats[i].encreaseSatiety();
+            plate.info();
+            System.out.println("" + cats[i]+ "\n");
         }
-
-
     }
 }
