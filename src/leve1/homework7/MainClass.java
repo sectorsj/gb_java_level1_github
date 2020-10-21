@@ -1,4 +1,4 @@
-package homework7;
+package leve1.homework7;
 
 public class MainClass {
     public static void main(String[] args) {

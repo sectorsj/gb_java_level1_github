@@ -1,4 +1,4 @@
-package homework7;
+package leve1.homework7;
 
 public class HungryCat {
     private String name;
@@ -18,7 +18,7 @@ public class HungryCat {
     }
 
     public void encreaseSatiety(){
-        boolean isSatiety;
+        // boolean isSatiety;
         if(appetite > satiety){
             satiety += appetite;
         }else

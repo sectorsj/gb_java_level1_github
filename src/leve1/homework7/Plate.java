@@ -1,4 +1,4 @@
-package homework7;
+package leve1.homework7;
 
 import java.util.Scanner;
 

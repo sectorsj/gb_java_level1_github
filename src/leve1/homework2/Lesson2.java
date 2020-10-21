@@ -1,4 +1,4 @@
-package homework2;
+package leve1.homework2;
 
 
 public class Lesson2 {

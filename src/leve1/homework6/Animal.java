@@ -1,4 +1,4 @@
-package homework6;
+package leve1.homework6;
 
  public abstract class Animal {
     protected String name;

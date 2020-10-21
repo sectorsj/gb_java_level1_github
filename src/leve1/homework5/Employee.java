@@ -1,4 +1,4 @@
-package homework5;
+package leve1.homework5;
 
 public class Employee {
     private final String fio;

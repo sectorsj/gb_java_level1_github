@@ -1,6 +1,4 @@
-package homework5;
-
-import java.util.Arrays;
+package leve1.homework5;
 
 public class TestEmploee {
 
