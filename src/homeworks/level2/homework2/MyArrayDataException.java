@@ -1,4 +1,14 @@
 package homeworks.level2.homework2;
 
-public class MyArrayDataException {
+public class MyArrayDataException extends RuntimeException{
+    public MyArrayDataException() {
+    }
+
+    public MyArrayDataException(String message) {
+        super(message);
+    }
+
+    public MyArrayDataException(String message, Throwable cause) {
+        super(message, cause);
+    }
 }
